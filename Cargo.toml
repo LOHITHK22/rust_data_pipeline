@@ -1,0 +1,12 @@
+[package]
+name = "rust_data_pipeline"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+polars = "0.35.0"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-rustls"] }
+anyhow = "1.0"
+plotly = "0.7"
