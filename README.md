@@ -2,10 +2,4 @@ This Rust-based data pipeline is designed to handle data ingestion, analysis, an
 
 After analyzing the data, the pipeline stores it into a PostgreSQL database. Using SQLx for asynchronous database interaction, it creates a customer_data table if it doesn't exist and inserts each row from the DataFrame into the database. The entire flow is designed to be robust, with error handling powered by the anyhow crate to manage potential issues during data ingestion, analysis, or storage.
 
-The pipeline is designed with modularity in mind, with distinct modules for ingestion, analysis, and storage, making it flexible and extensible for future enhancements. It also includes unit tests for validating the CSV reading functionality and basic statistical operations, ensuring code reliability.
-
-
-
-
-
-
+Additionally, the pipeline includes data visualization using Tableau, which helps in presenting the analysis results in an interactive and understandable manner. It is designed with modularity in mind, with distinct modules for ingestion, analysis, storage, and visualization, making it flexible and extensible for future enhancements. It also includes unit tests for validating the CSV reading functionality and basic statistical operations, ensuring code reliability.
